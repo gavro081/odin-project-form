@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="background.jpg" alt="mountains">
+    <p id="credit-picture">
+        Photo by <a href="https://unsplash.com/@sepoys?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Rohit Tandon</a> on 
+        <a href="https://unsplash.com/photos/aerial-photography-of-mountain-range-covered-with-snow-under-white-and-blue-sky-at-daytime-9wg5jCEPBsw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+    </p> 
+    <div class="container">  
+        <h4>This is a dummy form. Your information doesn't actually go anywhere. Still don't type real passwords, but feel
+            free to write your real name. </br></br> Sign up to get started!
+        </h4>
+
+        <form action="example.com" method="post" class="form-container">
+            <div class="form-subsection">
+                <div class="input-label-box">
+                    <label for="first-name">first name</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="input-label-box">
+                    <label for="last-name">last name</label>
+                    <input type="text" id="last-name">
+                </div>
+            </div>
+            <div class="form-subsection">
+                <div class="input-label-box">
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input-label-box">
+                    <label for="phone-number">phone number</label>
+                    <input type="text" id="phone-number">
+                </div>
+            </div>
+            <div class="form-subsection">
+                <div class="input-label-box">
+                    <label for="password">password</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="input-label-box">
+                    <label for="confirm-password">confirm password</label>
+                    <input type="password" id="confirm-password">
+                </div>
+            </div>
+        </form>
+        <button id="btn">create account</button>
+        <p>Already have an account? <a href="#" style="color:rgb(51, 177, 255);">Log in</a></p>
+    </div>
+</body>
+</html>
