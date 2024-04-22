@@ -51,6 +51,7 @@ img {
     width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 label + input{
@@ -62,15 +63,94 @@ label + input{
     justify-content: space-around;
     margin-bottom: 1rem;
 }
+form > .btn {
+    position: absolute;
+    bottom: 5.35rem;
+    opacity: 1;
+    z-index: 100;
+}
 
-#btn{
+.btn{
+    /* position: absolute; */
     align-self: flex-start;
-    /* margin-left: 3em; */
-    /* opacity: 1; */
-    padding: 1rem 2rem;
-    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
     border-radius: 15px;
     border: solid 2px black;
     background:lightskyblue;
     cursor: pointer;
+    opacity: 0;
+}
+
+input {
+    border: solid 1px;
+    border-radius: 2px;
+}
+input:focus {
+    outline: solid 1px blue;
+    background-color: #f5f5f5;
+    outline-offset: -2px;
+}
+
+input:valid {
+    outline: solid 2px green;
+    outline-offset: -2px;
+}
+
+input:invalid{
+    outline: solid 1px red;
+    outline-offset: -2px;
+}
+
+input:placeholder-shown{
+    outline: none;
+}
+
+.invalid-pass{
+    outline: solid 1px red;
+    outline-offset: -2px;
+}
+
+.valid-pass{
+    outline: solid 2px green;
+    outline-offset: -2px;
+}
+
+#error-message {
+    position: absolute;
+    font-size: 0.72rem;
+    bottom: 11.5rem;
+    right: 4.75rem;
+    color: red;
+}
+
+.password-format{
+    position: absolute;
+    left: 13.4rem;
+    bottom: 12.5rem;
+    font-size: 0.75rem;
+    opacity: 0;
+    color: red;
+}
+
+.opacityON{
+    opacity: 1;
+}
+
+.opacityOFF{
+    opacity: 0;
+}
+
+.greenText{
+    color: green;
+}
+
+.redText{
+    color: red;
+}
+
+.password-format > p{
+    margin: 0;
 }
