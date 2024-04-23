@@ -22,24 +22,24 @@
                 <div class="input-label-box">
                     <label for="first-name">first name</label>
                     <input type="text" id="first-name" placeholder="John" required
-                    minlength="2" maxlength="25">
+                    pattern="[A-Za-z]{2,25}">
                 </div>
                 <div class="input-label-box">
                     <label for="last-name">last name</label>
                     <input type="text" id="last-name" placeholder="Doe" required
-                    minlength="2" maxlength="25" >
+                    pattern="[A-Za-z]{2,40}" >
                 </div>
             </div>
             <div class="form-subsection">
                 <div class="input-label-box">
                     <label for="email">email</label>
                     <input type="text" id="email" placeholder="johndoe@idk.com" required
-                    minlength="5" maxlength="40">
+                    minlength="5" maxlength="50">
                 </div>
                 <div class="input-label-box">
                     <label for="phone-number">phone number</label>
-                    <input type="tel" id="phone-number" placeholder="07X XXX XXX"a
-                    required pattern="07\d{1}[\s]?\d{3}[\s]?\d{3}">
+                    <input type="tel" id="phone-number" placeholder="07X XXX XXX"
+                    pattern="07\d{1}[\s]?\d{3}[\s]?\d{3}">
                 </div>
             </div>
             <div class="form-subsection">
@@ -63,7 +63,6 @@
             </div>
         <button class="btn" type="submit" value="send">create account</button>
         </form>
-        <button class="btn" type="submit" value="send">create account</button>
         <p>Already have an account? <a href="#" style="color:rgb(51, 177, 255);">Log in</a></p>
     </div>
     <script src="script.js"></script>
